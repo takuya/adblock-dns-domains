@@ -15,6 +15,6 @@ https://raw.githubusercontent.com/takuya/adblock-dns-domains/master/ad-domains.t
 
 ## 定期更新
 
-`cron:  '5 5 */7 * *'` で、７日おきに、月４回実行する。
+`cron:  '5 5 */5 * *'` で、5日おきに、月6回実行する。
 
 
