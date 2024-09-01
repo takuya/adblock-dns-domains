@@ -15,6 +15,7 @@ done
 
 cat $__TEMP |  \
   grep -Po  '(?<=^\|\|).+(?=\^(\$document|$))'  |  \
+  grep -Pv '(\d{1,3}\.){3}\d{1,3}'| \
   sort | uniq | awk ' { print "||"$1"^" }' \
   > $OUTPUT
 NUM=$(cat $OUTPUT | wc -l )
